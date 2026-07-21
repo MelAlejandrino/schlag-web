@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import { Highlights } from "@/components/Highlights";
 import { Advanced } from "@/components/Advanced";
+import Limitations from "@/components/Limitations";
 import HowItWorks from "@/components/HowItWorks";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero />
       <Highlights />
       <Advanced />
+      <Limitations />
       <HowItWorks />
       <FAQ />
       <Footer />
