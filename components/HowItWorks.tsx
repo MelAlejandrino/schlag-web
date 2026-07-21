@@ -38,7 +38,7 @@ export default function HowItWorks() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-on-surface font-fraunces mb-3">
-            Index once, search instantly
+            How Schlag indexes and searches files
           </h2>
           <p className="text-on-surface-variant max-w-xl">
             A Rust backend with SQLite and Tantivy keeps everything current without ever slowing you down.

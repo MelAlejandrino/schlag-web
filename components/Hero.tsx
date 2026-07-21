@@ -102,17 +102,37 @@ export default function Hero() {
             variants={item}
             className="text-3xl md:text-4xl font-semibold leading-snug tracking-tight text-on-surface font-fraunces"
           >
-            A modern, high-performance desktop file explorer.
+            A fast desktop file explorer for Windows with instant search, tabs, and terminal integration.
           </motion.h1>
 
           <motion.p
             variants={item}
             className="text-base text-on-surface-variant leading-relaxed max-w-xl"
           >
-            Schlag indexes your files in the background, searches millions of entries instantly,
-            and provides power-user workflows — all in a native desktop experience powered by Tauri
-            and React.
+            Schlag is a desktop file explorer for Windows that indexes your files in the background, searches millions of entries instantly, and provides power-user workflows — all in a native desktop experience powered by Tauri and React.
           </motion.p>
+
+          <motion.div
+            variants={item}
+            className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-on-surface-variant"
+          >
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              Platform: Windows
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              Stack: Tauri, React, Rust
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              Search: SQLite FTS5 + Tantivy
+            </span>
+            <span className="flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+              License: MIT (open source)
+            </span>
+          </motion.div>
 
           <motion.div
             variants={item}

@@ -168,7 +168,7 @@ export function Advanced() {
           className="mb-10"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-on-surface font-fraunces mb-3">
-            Advanced features
+            Advanced features for power-user file management
           </h2>
           <p className="text-on-surface-variant max-w-xl">
             Quick access to your important files and archives, without leaving the explorer.

@@ -19,9 +19,9 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Schlag — File Explorer",
+  title: "Schlag — Fast Desktop File Explorer for Windows",
   description:
-    "Schlag is a precision-engineered Windows file explorer built for power users. Instant search, tabs, terminal, and zip browsing.",
+    "Schlag is an open-source desktop file explorer for Windows with instant search, tabs, terminal integration, and zip browsing. Built with Tauri and Rust for power users.",
   icons: {
     icon: "/icons/icon.ico",
   },
@@ -32,6 +32,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Schlag",
+    "applicationCategory": "DesktopApplication",
+    "operatingSystem": "Windows",
+    "description": "Schlag is an open-source desktop file explorer for Windows with instant search, tabs, terminal integration, and zip browsing. Built with Tauri, React, and Rust for power users.",
+    "url": "https://github.com/MelAlejandrino/Schlag",
+    "license": "https://www.github.com/MelAlejandrino/Schlag/blob/main/LICENSE",
+    "author": {
+      "@type": "Organization",
+      "name": "Schlag"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  };
+
   return (
     <html
       lang="en"
@@ -39,6 +59,10 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
       </body>
     </html>
   );

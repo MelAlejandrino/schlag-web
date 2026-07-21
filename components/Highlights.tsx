@@ -142,7 +142,7 @@ export function Highlights() {
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-semibold text-on-surface font-fraunces mb-3">
-            Built for the way you work
+            Built for developers and power users
           </h2>
           <p className="text-on-surface-variant max-w-xl">
             Every feature is designed around speed, precision, and pure utility.
