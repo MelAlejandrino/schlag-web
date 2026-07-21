@@ -39,8 +39,8 @@ export default function RootLayout({
     "applicationCategory": "DesktopApplication",
     "operatingSystem": "Windows",
     "description": "Schlag is an open-source desktop file explorer for Windows with instant search, tabs, terminal integration, and zip browsing. Built with Tauri, React, and Rust for power users.",
-    "url": "https://github.com/MelAlejandrino/Schlag",
-    "license": "https://www.github.com/MelAlejandrino/Schlag/blob/main/LICENSE",
+    "url": "https://schlag-web.vercel.app",
+    "license": "https://github.com/MelAlejandrino/Schlag/blob/main/LICENSE",
     "author": {
       "@type": "Organization",
       "name": "Schlag"
