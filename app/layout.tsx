@@ -19,7 +19,7 @@ const fraunces = Fraunces({
 });
 
 export const metadata: Metadata = {
-  title: "Schlag — Executive File Explorer",
+  title: "Schlag — File Explorer",
   description:
     "Schlag is a precision-engineered Windows file explorer built for power users. Instant search, tabs, terminal, and zip browsing.",
   icons: {
