@@ -18,12 +18,31 @@ const fraunces = Fraunces({
   weight: ["500", "600"],
 });
 
+const title = "Schlag — Fast Desktop File Explorer for Windows";
+const description =
+  "Schlag is an open-source desktop file explorer for Windows with instant search, tabs, terminal integration, and zip browsing. Built with Tauri and Rust for power users.";
+
 export const metadata: Metadata = {
-  title: "Schlag — Fast Desktop File Explorer for Windows",
-  description:
-    "Schlag is an open-source desktop file explorer for Windows with instant search, tabs, terminal integration, and zip browsing. Built with Tauri and Rust for power users.",
+  metadataBase: new URL("https://schlag-web.vercel.app"),
+  title,
+  description,
+  alternates: { canonical: "/" },
   icons: {
     icon: "/icons/icon.ico",
+  },
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Schlag",
+    type: "website",
+    images: [{ url: "/icons/icon.png", width: 512, height: 512, alt: "Schlag" }],
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+    images: ["/icons/icon.png"],
   },
 };
 
